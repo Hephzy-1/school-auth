@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School SignUp</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="skewed-header">
+    <div class="header-bg" style="background-image: url(https://images.unsplash.com/photo-1515688594390-b649af70d282?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFrZSUyMHVwfGVufDB8fDB8fHww);"></div>
+  
+
+    <div class="skewed-header-content">
+      <div class="heading">
+        <h1>SignUp Form</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <form action="/signup" method="post" class="form">
+      <div class="form-group">  
+        <input type="text" name="fullname" placeholder="Fullname" required>
+        <label for="fullname">Fullname</label>
+      </div>
+      <div class="form-group">  
+        <input type="email" name="email" placeholder="Email" required autocomplete="off">
+        <label for="email">Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" required>
+        <label for="password">Password</label>
+      </div>
+      <div class="form-group">
+        <input type="date" name="date" id="date" required>
+        <label for="DOB">Date of Birth</label>
+      </div>
+
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+
+    <div class="p">
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+
+  </div>
+</body>
+</html>
+
+<!-- ce,cr[f4585 -->

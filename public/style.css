@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* HOME PAGE AND DASH BOARD */
+.home, .dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #11122b;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+
+.homebtn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.homebtn button {
+  background-color: #cea135;
+  color: #11122b;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homebtn button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.homebtn button:hover {
+  background-color: #b08e33;
+}
+
+.homebtn button:active {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Skewed Header  */
+.skewed-header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  filter: brightness(65%);
+}
+
+.skewed-header-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.heading {
+  background-color: #cea135;
+  color: #11122b;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 205px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* signup form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form input {
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2.5px solid #808080;
+  width: 450px;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #cea135;
+}
+
+.form input::-webkit-input-placeholder {
+  color: #11122b;
+}
+
+.form input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  color: #cea135;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form input:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+
+.login-btn, .signup-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #cea135;
+  color: #11122b;
+  font-size: 1.25em;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  border: 1px solid #cea135;
+  border-radius: 2px;
+  outline: none;
+  transition: 0.3s;
+}
+
+button:active {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p a {
+  color: #11122b;
+  cursor: pointer;
+}
