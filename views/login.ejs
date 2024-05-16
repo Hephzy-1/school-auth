@@ -36,6 +36,15 @@
       <p>Don't have an account? <a href="/signup">Sign Up</a></p>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('error')) {
+        alert(params.get('error'));
+      }
+    });
+  </script>
 </body>
 </html>
 
